@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:rotationY="0"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:contentDescription="@string/background_picture_for_main_page"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ru_pizzeria_background"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-30dp" />
+
+    <TextView
+        android:id="@+id/Mainpagetitle"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:shadowColor="@color/white"
+        android:shadowDx="10"
+        android:shadowDy="10"
+        android:shadowRadius="20"
+        android:text="@string/ru_pizzeria"
+        android:textColor="#D5DB1111"
+        android:textSize="60sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/OrderPageButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
+        android:text="@string/place_order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/Mainpagetitle" />
+
+    <Button
+        android:id="@+id/OrderHistoryButton"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/order_history"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OrderPageButton"
+        app:layout_constraintVertical_bias="0.045" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
